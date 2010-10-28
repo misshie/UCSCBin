@@ -5,8 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "UCSCBin"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary =
+     %Q{Calculate BIN indexes on UCSC Bioinformatics's Genome Browser}
+    gem.description =
+     %Q{Utilities for UCSC Bioinfomatics's Genome Browser
+      ( http://g  enome.ucsc.edu ) including calculation of a BIN index
+       from a genomic interval to speed-up SQL queries, and conversion
+       between 1-based full-closed (for humans) and 0-based half-open 
+       (for machienes) intervals}
     gem.email = "missy@be.to"
     gem.homepage = "http://github.com/misshie/UCSCBin"
     gem.authors = ["Hiroyuki MISHIMA"]
