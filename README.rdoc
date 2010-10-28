@@ -4,9 +4,10 @@ Copyright:: Hiroyuki Mishima, 2010
 License:: the MIT/X11 license. See the LICENSE file.
 
 Original program in C by Jim Kent, 2002
-See also http://genomewiki.ucsc.edu/index.php/Bin_indexing_system,
-a paper Kent, et. al. Genome Research 2002.12:996-1006,
-and src/lib/binRange.c in the kent source tree.
+See also related materials:
+* http://genomewiki.ucsc.edu/index.php/Bin_indexing_system,
+* Kent, et. al. Genome Research 2002.12:996-1006, http://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
+* src/lib/binRange.c in the kent source tree. http://hgdownload.cse.ucsc.edu/admin/jksrc.zip
 
 == UCSCBin::Util
 convert between 0-based half-open interval and
@@ -26,7 +27,7 @@ to run the sample (input interval is regular 1-based full-closed cordination)
 output:
  chr1:234567-345678      LOC100133331; LOC100132287; LOC100132062
 
-== Note on Patches/Pull Requests
+== Note on Patches/Pull Requests 
 * github repository is git://github.com/misshie/UCSCBin.git
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -34,7 +35,7 @@ output:
   future version unintentionally.
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+* Send me a pull request. Bonus points for topic branches. 
 
 == Copyright
 
