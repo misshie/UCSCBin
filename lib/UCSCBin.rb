@@ -26,12 +26,13 @@ Version = "0.2.0" # 20101028
     # 'zero_start' and 'zero_end' are 0-based half-open
     # used in UCSC MySQL database and the BED format.
     # the first one base in a chromosome is [0, 1)
+    # Positions must be start<end
     def self.zero_to_one(zero_start, zero_end)
       case
       when (zero_start < 0 || zero_end < 0) 
         raise ArgumentError, "positions must be >=0"
       when zero_start >= zero_end
-        raise ArgumentError, "position must be start<end"
+        raise ArgumentError, "positions must be start<end"
       end
       
       [zero_start + 1, zero_end]
@@ -40,12 +41,13 @@ Version = "0.2.0" # 20101028
     # 'one_start' and 'one_end' are 1-based full-close
     # used in UCSC genome browser's human interface and most of other formats
     # the first one base in a chromosome is [1, 1]
+    # Positions must be start<=end
     def self.one_to_zero(one_start, one_end)
       case
       when (one_start < 1 || one_end < 1) 
         raise ArgumentError, "positions must be >=1"
       when one_start > one_end
-        raise ArgumentError, "position must be start<=end"
+        raise ArgumentError, "positions must be start<=end"
       end
 
       [one_start - 1 , one_end]
@@ -60,9 +62,11 @@ Version = "0.2.0" # 20101028
     BIN_FIRST_SHIFT            = 17 # How much to shift to get to finest bin.
     BIN_NEXT_SHIFT             = 3  # How much to shift to get to next larger bin.
 
-    # extended bin index for positions >= 512M is not supported yet
+    # Return a Integer of a BIN which is the smallest/finest bin 
+    # containing whole the interval/range.
+    # 
+    # Extended bin index for positions >= 512M is not supported yet
     # Do you need it? Please email me.
-    #
     def self.bin_from_range(bin_start, bin_end)
       if bin_end <= BINRANGE_MAXEND_512M
         bin_from_range_standard(bin_start, bin_end)
@@ -73,6 +77,10 @@ Version = "0.2.0" # 20101028
 
     class << self;  alias bin bin_from_range; end
 
+    # Return an Array of BINs which are all bins containing whole the
+    # interval/range. Thus, it always contains "0" indicating a bin
+    # containing whole of a chromosome.
+    # 
     # extended bin index for positions >= 512M is not supported yet
     # Do you need it? Please email me.
     #
