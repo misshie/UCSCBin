@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{UCSCBin}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Hiroyuki MISHIMA"]
   s.date = %q{2010-10-28}
-  s.description = %q{Utilities for UCSC Bioinfomatics's Genome Browser
+  s.description = %q{Utilities for UCSC Bioinformatics Genome Browser
       ( http://g  enome.ucsc.edu ) including calculation of a BIN index
        from a genomic interval to speed-up SQL queries, and conversion
        between 1-based full-closed (for humans) and 0-based half-open 
