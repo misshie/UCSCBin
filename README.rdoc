@@ -1,9 +1,10 @@
 = UCSCBin
-Author:: Hiroyuki Mishima ( missy at be.to )
+Author:: Hiroyuki Mishima ( missy at be.to / hmishima at nagasaki-u.ac.jp)
 Copyright:: Hiroyuki Mishima, 2010
 License:: the MIT/X11 license. See the LICENSE file.
 
 Original program in C by Jim Kent, 2002
+
 See also related materials:
 * http://genomewiki.ucsc.edu/index.php/Bin_indexing_system,
 * Kent, et. al. Genome Research 2002.12:996-1006, http://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
