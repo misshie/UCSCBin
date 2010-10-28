@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: UCSCBin::BinRange</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/UCSCBin_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/UCSCBin.rb">lib/UCSCBin.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000003">::bin_all</a></li>
+					
+					<li><a href="#M000007">::bin_all_extended</a></li>
+					
+					<li><a href="#M000006">::bin_all_standard</a></li>
+					
+					<li><a href="#M000002">::bin_from_range</a></li>
+					
+					<li><a href="#M000005">::bin_from_range_extended</a></li>
+					
+					<li><a href="#M000004">::bin_from_range_standard</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../UCSCBin.html">UCSCBin</a></li>
+				
+					<li><a href="../UCSCBin/BinRange.html">UCSCBin::BinRange</a></li>
+				
+					<li><a href="../UCSCBin/Utils.html">UCSCBin::Utils</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">UCSCBin::BinRange</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="BINRANGE_MAXEND_512M">BINRANGE_MAXEND_512M</a></dt>
+				
+				<dd class="description missing-docs">(Not documented)</dd>
+				
+			
+				<dt><a name="BIN_OFFSETS_EXTENDED">BIN_OFFSETS_EXTENDED</a></dt>
+				
+				<dd class="description missing-docs">(Not documented)</dd>
+				
+			
+				<dt><a name="BIN_OFFSETS">BIN_OFFSETS</a></dt>
+				
+				<dd class="description missing-docs">(Not documented)</dd>
+				
+			
+				<dt><a name="BIN_OFFSET_OLD_TO_EXTENDED">BIN_OFFSET_OLD_TO_EXTENDED</a></dt>
+				
+				<dd class="description missing-docs">(Not documented)</dd>
+				
+			
+				<dt><a name="BIN_FIRST_SHIFT">BIN_FIRST_SHIFT</a></dt>
+				
+				<dd class="description"><p>
+How much to shift to get to finest bin.
+</p></dd>
+				
+			
+				<dt><a name="BIN_NEXT_SHIFT">BIN_NEXT_SHIFT</a></dt>
+				
+				<dd class="description"><p>
+How much to shift to get to next larger bin.
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="bin-all-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_all</span><span
+						class="method-args">(p_start, p_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return an Array of BINs which are all bins containing whole the
+interval/range. Thus, it always contains &#8220;0&#8221; indicating a bin
+containing whole of a chromosome.
+</p>
+<p>
+extended bin index for positions >= 512M is not supported yet Do you need
+it? Please email me.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-all-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 89</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_all</span>(<span class="ruby-identifier">p_start</span>, <span class="ruby-identifier">p_end</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">p_end</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-constant">BINRANGE_MAXEND_512M</span>
+        <span class="ruby-identifier">bin_all_standard</span>(<span class="ruby-identifier">p_start</span>, <span class="ruby-identifier">p_end</span>)
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-identifier">bin_all_extended</span>(<span class="ruby-identifier">p_start</span>, <span class="ruby-identifier">p_end</span>)
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="bin-from-range-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_from_range</span><span
+						class="method-args">(bin_start, bin_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return a Integer of a BIN which is the smallest/finest bin containing whole
+the interval/range.
+</p>
+<p>
+Extended bin index for positions >= 512M is not supported yet Do you need
+it? Please email me.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-from-range-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 72</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_from_range</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">bin_end</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-constant">BINRANGE_MAXEND_512M</span>
+        <span class="ruby-identifier">bin_from_range_standard</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-keyword kw">else</span>
+        <span class="ruby-identifier">bin_from_range_extended</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-class-method-details" class="method-section section">
+			<h3 class="section-header">Private Class Methods</h3>
+
+		
+			<div id="bin-all-extended-method" class="method-detail ">
+				<a name="M000007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_all_extended</span><span
+						class="method-args">(bin_start, bin_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-all-extended-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 140</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_all_extended</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-value str">&quot;Extended bins are not supported yet&quot;</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="bin-all-standard-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_all_standard</span><span
+						class="method-args">(bin_start, bin_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-all-standard-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 123</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_all_standard</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-identifier">bin_start_orig</span> = <span class="ruby-identifier">bin_start</span>
+      <span class="ruby-identifier">bin_end_orig</span>   = <span class="ruby-identifier">bin_end</span> 
+      <span class="ruby-identifier">results</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+
+      <span class="ruby-identifier">bin_start</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_FIRST_SHIFT</span>
+      <span class="ruby-identifier">bin_end</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">bin_end</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_FIRST_SHIFT</span>
+
+      <span class="ruby-constant">BIN_OFFSETS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">offset</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">results</span>.<span class="ruby-identifier">concat</span>(((<span class="ruby-identifier">offset</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">bin_start</span>)<span class="ruby-operator">..</span>(<span class="ruby-identifier">offset</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">bin_end</span>)).<span class="ruby-identifier">to_a</span>)
+        <span class="ruby-identifier">bin_start</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_NEXT_SHIFT</span>
+        <span class="ruby-identifier">bin_end</span>   <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_NEXT_SHIFT</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">results</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="bin-from-range-extended-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_from_range_extended</span><span
+						class="method-args">(bin_start, bin_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-from-range-extended-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 119</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_from_range_extended</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-value str">&quot;Extended bins are not supported yet&quot;</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="bin-from-range-standard-method" class="method-detail ">
+				<a name="M000004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">bin_from_range_standard</span><span
+						class="method-args">(bin_start, bin_end)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="bin-from-range-standard-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/UCSCBin.rb, line 99</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">bin_from_range_standard</span>(<span class="ruby-identifier">bin_start</span>, <span class="ruby-identifier">bin_end</span>)
+      <span class="ruby-comment cmt"># Given start,end in chromosome coordinates assign it</span>
+      <span class="ruby-comment cmt"># a bin.   There's a bin for each 128k segment, for each</span>
+      <span class="ruby-comment cmt"># 1M segment, for each 8M segment, for each 64M segment,</span>
+      <span class="ruby-comment cmt"># and for each chromosome (which is assumed to be less than</span>
+      <span class="ruby-comment cmt"># 512M.)  A range goes into the smallest bin it will fit in.</span>
+
+      <span class="ruby-identifier">bin_start</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_FIRST_SHIFT</span>
+      <span class="ruby-identifier">bin_end</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">bin_end</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_FIRST_SHIFT</span>
+
+      <span class="ruby-constant">BIN_OFFSETS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">offset</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">offset</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">bin_start</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">bin_start</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">bin_end</span>
+        <span class="ruby-identifier">bin_start</span> <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_NEXT_SHIFT</span>
+        <span class="ruby-identifier">bin_end</span>   <span class="ruby-operator">&gt;&gt;=</span> <span class="ruby-constant">BIN_NEXT_SHIFT</span>
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">RangeError</span>, \
+      <span class="ruby-node">&quot;start #{bin_start}, end #{bin_end} out of range in findBin (max is 512M)&quot;</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
