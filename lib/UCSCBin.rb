@@ -27,6 +27,13 @@ Version = "0.2.0" # 20101028
     # used in UCSC MySQL database and the BED format.
     # the first one base in a chromosome is [0, 1)
     def self.zero_to_one(zero_start, zero_end)
+      case
+      when (zero_start < 0 || zero_end < 0) 
+        raise ArgumentError, "positions must be >=0"
+      when zero_start >= zero_end
+        raise ArgumentError, "position must be start<end"
+      end
+      
       [zero_start + 1, zero_end]
     end
 
@@ -34,6 +41,13 @@ Version = "0.2.0" # 20101028
     # used in UCSC genome browser's human interface and most of other formats
     # the first one base in a chromosome is [1, 1]
     def self.one_to_zero(one_start, one_end)
+      case
+      when (one_start < 1 || one_end < 1) 
+        raise ArgumentError, "positions must be >=1"
+      when one_start > one_end
+        raise ArgumentError, "position must be start<=end"
+      end
+
       [one_start - 1 , one_end]
     end
   end
