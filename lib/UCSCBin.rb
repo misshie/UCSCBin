@@ -59,8 +59,10 @@ Version = "0.2.0" # 20101028
     BIN_OFFSETS_EXTENDED       = [4096+512+64+8+1, 512+64+8+1, 64+8+1, 8+1, 1, 0]
     BIN_OFFSETS                = [512+64+8+1, 64+8+1, 8+1, 1, 0]
     BIN_OFFSET_OLD_TO_EXTENDED = 4681
-    BIN_FIRST_SHIFT            = 17 # How much to shift to get to finest bin.
-    BIN_NEXT_SHIFT             = 3  # How much to shift to get to next larger bin.
+    # How much to shift to get to finest bin.
+    BIN_FIRST_SHIFT            = 17 
+    # How much to shift to get to next larger bin.
+    BIN_NEXT_SHIFT             = 3 
 
     # Return a Integer of a BIN which is the smallest/finest bin 
     # containing whole the interval/range.

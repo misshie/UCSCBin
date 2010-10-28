@@ -1,7 +1,10 @@
 = UCSCBin
-Author:: Hiroyuki Mishima ( missy at be.to / hmishima at nagasaki-u.ac.jp)
+Author:: Hiroyuki Mishima (missy at be.to / hmishima at nagasaki-u.ac.jp)
 Copyright:: Hiroyuki Mishima, 2010
 License:: the MIT/X11 license. See the LICENSE file.
+
+A library for handling BIN index and 0/1-based coordination of
+UCSC Bioinformatics Genome Browser ( http://genome.ucsc.edu/ )
 
 Original program in C by Jim Kent, 2002
 
