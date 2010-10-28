@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Hiroyuki MISHIMA"]
   s.date = %q{2010-10-28}
   s.description = %q{Utilities for UCSC Bioinformatics Genome Browser
-      ( http://g  enome.ucsc.edu ) including calculation of a BIN index
+      ( http://genome.ucsc.edu ) including calculation of a BIN index
        from a genomic interval to speed-up SQL queries, and conversion
        between 1-based full-closed (for humans) and 0-based half-open 
        (for machienes) intervals}
@@ -69,7 +69,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Calculate BIN indexes on UCSC Bioinformatics's Genome Browser}
+  s.summary = %q{Utilities for DB access of UCSC Bioinformatics Genome Browser}
   s.test_files = [
     "spec/UCSCBin_Utils_spec.rb",
      "spec/spec_helper.rb",

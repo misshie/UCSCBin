@@ -6,10 +6,10 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "UCSCBin"
     gem.summary =
-     %Q{Calculate BIN indexes on UCSC Bioinformatics's Genome Browser}
+     %Q{Utilities for DB access of UCSC Bioinformatics Genome Browser}
     gem.description =
-     %Q{Utilities for UCSC Bioinfomatics's Genome Browser
-      ( http://g  enome.ucsc.edu ) including calculation of a BIN index
+     %Q{Utilities for UCSC Bioinformatics Genome Browser
+      ( http://genome.ucsc.edu ) including calculation of a BIN index
        from a genomic interval to speed-up SQL queries, and conversion
        between 1-based full-closed (for humans) and 0-based half-open 
        (for machienes) intervals}
