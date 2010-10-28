@@ -9,7 +9,7 @@ begin
      %Q{Utilities for DB access of UCSC Bioinformatics Genome Browser}
     gem.description =
      %Q{Utilities for UCSC Bioinformatics Genome Browser
-      ( http://genome.ucsc.edu ) including calculation of a BIN index
+       ( http://genome.ucsc.edu ) including calculation of a BIN index
        from a genomic interval to speed-up SQL queries, and conversion
        between 1-based full-closed (for humans) and 0-based half-open 
        (for machienes) intervals}
